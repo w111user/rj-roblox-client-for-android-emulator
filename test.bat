@@ -7,23 +7,42 @@ cls
 echo THOI GIAN HIEN TAI:
 time /t
 echo A project made by vibe coder, ty for using
-echo =====================================================================================
-echo                 CHON GIA LAP DE CHAY TOOL (YEU CAU: MAY CO PYTHON)
-echo       CHOOSE YOUR ANDROID EMULATOR TO RUN (NEED TO HAVE PYTHON ON YOUR DEVICES)
-echo =====================================================================================
-echo [1] MuMu Player (run it if the selection 4 not working when u runned it for more than 2 times)
-echo [2] LDPlayer (New MuMu Player works too)
-echo [3] Install some important python modules
-echo [4] LDPlayer (for roblox vng, also new MuMu Player works too)
-echo [5] MuMu Player (for roblox vng)
-echo [6] Check device (u can use this to start adb server)
-echo [7] Open logcat (android device debugger, idc it will cause bugs or not)
-echo [8] Kill server adb
-echo [9] EXIT
-systeminfo | find "Hyper-V Requirements"
-echo Not all of them are english, try your best to know the error or contact me in discord: w11user
 echo.
-set /p choice=Nhap lua chon (choose your opinions) [1-9]: 
+echo ===============================================================================
+echo            CHOOSE ANDROID EMULATOR TO RUN THE TOOL
+echo            (REQUIRES PYTHON INSTALLED ON YOUR PC)
+echo ===============================================================================
+echo.
+echo [1] MuMu Player
+echo     (Use this if option 4 does not work after running it more than 2 times)
+echo.
+echo [2] LDPlayer
+echo     (New MuMu Player also works)
+echo.
+echo [3] Install required Python modules
+echo.
+echo [4] LDPlayer (Roblox VNG)
+echo     (New MuMu Player also works)
+echo.
+echo [5] MuMu Player (Roblox VNG)
+echo.
+echo [6] Check device
+echo     (Can be used to start the ADB server)
+echo.
+echo [7] Open logcat
+echo     (Android device debugger - may cause bugs)
+echo.
+echo [8] Kill ADB server
+echo.
+echo [9] EXIT
+echo.
+echo ===============================================================================
+systeminfo | find "Hyper-V Requirements"
+echo Not all messages are in English.
+echo If you get errors, try to understand them or contact me on Discord: w11user
+echo.
+
+set /p choice=Nhap lua chon (choose your option) [1-9]: 
 
 if "%choice%"=="1" goto mumu
 if "%choice%"=="2" goto ldplayer
@@ -31,55 +50,74 @@ if "%choice%"=="3" goto install
 if "%choice%"=="4" goto ldvng
 if "%choice%"=="5" goto mumuvng
 if "%choice%"=="6" goto check
-if "%choice%"=="7" adb logcat
-if "%choice%"=="8" adb kill-server
-if "%choice%"=="9" exit
+if "%choice%"=="7" goto logcat
+if "%choice%"=="8" goto killadb
+if "%choice%"=="9" goto end
+
+echo.
+echo Invalid option! Please choose between 1 and 9.
+pause
 goto menu
 
 :install
 echo.
-echo Installing...
-"install request.cmd"
-echo done
+echo Installing required Python modules...
+call "install request.cmd"
+echo Done.
 pause
 goto menu
 
 :check
 echo.
-echo loading adb command...
+echo Checking ADB devices...
 adb devices
+pause
+goto menu
+
+:logcat
+echo.
+echo Opening logcat...
+adb logcat
+pause
+goto menu
+
+:killadb
+echo.
+echo Killing ADB server...
+adb kill-server
+echo ADB server stopped.
 pause
 goto menu
 
 :mumu
 echo.
-echo Selected optinion 1, loading...
+echo Selected option 1 - MuMu Player
 python "final rj when kick (for mumu player).py"
-echo co j do sai sai... nhan phim bat ki de ve menu
+echo Something went wrong? Press any key to return to menu.
 pause >nul
 goto menu
 
 :ldplayer
 echo.
-echo Selected optinion 2, loading...
+echo Selected option 2 - LDPlayer
 python "final rj when kick (for ldplayer).py"
-echo co j do sai sai... nhan phim bat ki de ve menu
+echo Something went wrong? Press any key to return to menu.
 pause >nul
 goto menu
 
 :ldvng
 echo.
-echo Selected optinion 4, loading...
+echo Selected option 4 - LDPlayer (Roblox VNG)
 python "rj vng (for ldplayer).py"
-echo co j do sai sai... nhan phim bat ki de ve menu
+echo Something went wrong? Press any key to return to menu.
 pause >nul
 goto menu
 
 :mumuvng
 echo.
-echo Selected optinion 5, loading...
+echo Selected option 5 - MuMu Player (Roblox VNG)
 python "rj vng (for mumu player).py"
-echo co j do sai sai... nhan phim bat ki de ve menu
+echo Something went wrong? Press any key to return to menu.
 pause >nul
 goto menu
 
@@ -87,3 +125,4 @@ goto menu
 echo.
 echo Tool da dung. Nhan phim bat ky de thoat...
 pause >nul
+exit
