@@ -1,22 +1,62 @@
 # rj-roblox-client-for-android-emulator
-Hello! 
-This is my project which I started to make it for a years ago.
-If you want to use this, or remake, copy, feel free to do it! But remember to write my name as an author in your project :3
-Have fun :) !
 
-# How to use:
-Download all of these files and extract anywhere you want, then run the .bat file called test.bat. Next, run the opinion 3 to make sure all of the important python modules are installed. And you have 2 of opinions about the type of roblox: VNG and global. Run the opinions of the emulator you use (and the type of roblox too):
+Hello! 👋  
+This is my project, which I started about a year ago.
 
+You are free to **use, remake, or copy** this project.  
+However, **please credit me as the author** if you use it in your own project. :3  
+Have fun! 😊
+
+---
+
+## 📌 How to use
+
+1. Download all files and extract them anywhere you want.
+2. Run the `.bat` file named **`test.bat`**.
+3. Choose **option 3** first to make sure all required Python modules are installed.
+4. Select:
+   - The **Android emulator** you are using
+   - The **Roblox version** you want to run (**Global** or **VNG**)
+
+---
+
+## ⚙️ Emulator Menu
+
+
+
+## ⚙️ Emulator Menu
+
+```text
 =====================================================================================
-                 CHON GIA LAP DE CHAY TOOL (YEU CAU: MAY CO PYTHON)
-       CHOOSE YOUR ANDROID EMULATOR TO RUN (NEED TO HAVE PYTHON ON YOUR DEVICES)
-======================================================================================
-[1] MuMu Player (run it if the selection 4 not working when u runned it for more than 2 times)
-[2] LDPlayer (New MuMu Player works too)
-[3] Install some important python modules
-[4] LDPlayer (for roblox vng, also new MuMu Player works too)
-[5] MuMu Player (for roblox vng)
-[6] Check device (u can use this to start adb server)
-[7] Open logcat (android device debugger, idc it will cause bugs or not)
-[8] Kill server adb
+           CHOOSE ANDROID EMULATOR TO RUN THE TOOL
+           (REQUIRES PYTHON INSTALLED ON YOUR PC)
+=====================================================================================
+[1] MuMu Player
+    (Use this if option 4 does not work after running it more than 2 times)
+
+[2] LDPlayer
+    (New MuMu Player also works)
+
+[3] Install required Python modules
+
+[4] LDPlayer (Roblox VNG)
+    (New MuMu Player also works)
+
+[5] MuMu Player (Roblox VNG)
+
+[6] Check device
+    (Can be used to start the ADB server)
+
+[7] Open logcat
+    (Android device debugger – may cause bugs)
+
+[8] Kill ADB server
+
 [9] EXIT
+
+
+
+---
+
+That’s it! 🎉  
+Enjoy using the tool.
