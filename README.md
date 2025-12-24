@@ -23,9 +23,6 @@ Have fun! 😊
 ## ⚙️ Emulator Menu
 
 
-
-## ⚙️ Emulator Menu
-
 ```text
 =====================================================================================
            CHOOSE ANDROID EMULATOR TO RUN THE TOOL
