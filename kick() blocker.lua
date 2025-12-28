@@ -1,3 +1,4 @@
+--block kick() request, idk why i make this
 local TeleportService = game:GetService("TeleportService")
 local Players = game:GetService("Players")
 
