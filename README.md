@@ -18,6 +18,8 @@ Have fun! 😊
    - The **Android emulator** you are using
    - The **Roblox version** you want to run (**Global** or **VNG**)
 
+Some files that are temporary, ignore it or do anythings you want :)
+
 ---
 
 ## ⚙️ Emulator Menu
@@ -50,7 +52,6 @@ Have fun! 😊
 [8] Kill ADB server
 
 [9] EXIT
-
 
 
 ---
