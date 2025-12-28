@@ -1,1 +1,1 @@
-There is a file called adb.zip, extract it (choose replace all if it ask) to fix when the adb.exe, *.exe files corup
+There is a file called adb.zip, extract it (choose replace all if it ask) to fix when the adb.exe, *.exe files corrupted
