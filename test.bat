@@ -42,7 +42,7 @@ echo Not all messages are in English.
 echo If you get errors, try to understand them or contact me on Discord: w11user
 echo.
 
-set /p choice=Nhap lua chon (choose your opinion) [1-9]: 
+set /p choice=Nhap lua chon (choose your option) [1-9]: 
 
 if "%choice%"=="1" goto mumu
 if "%choice%"=="2" goto ldplayer
