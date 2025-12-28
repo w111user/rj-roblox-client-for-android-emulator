@@ -1,4 +1,4 @@
-# rj-roblox-client-for-android-emulator
+# Rejoin roblox client for android emulator
 
 Hello! 👋  
 This is my project, which I started about a year ago.
