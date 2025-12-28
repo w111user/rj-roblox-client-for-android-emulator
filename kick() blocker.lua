@@ -16,8 +16,7 @@ mt.__namecall = newcclosure(function(self, ...)
     if self == player and method == "Kick" then
         warn("[AutoRejoin] Kick detected! Attempting to teleport to a new server...")
         task.spawn(function()
-            pcall(function()
-                -- Tìm server khác
+            pcall(function() --try to finding new server (uhh its not working xd)
                 local HttpService = game:GetService("HttpService")
                 local function findNewServer()
                     local servers = HttpService:JSONDecode(game:HttpGet(
