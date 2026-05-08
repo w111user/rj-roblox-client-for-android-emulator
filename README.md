@@ -53,7 +53,7 @@ Some files that are temporary, ignore it or do anythings you want :)
 
 [9] EXIT
 
-
+```
 ---
 
 ## ⚠️ Disclaimer
@@ -62,7 +62,6 @@ This project is intended for **educational and personal use only**.
 - It only automates **client-side actions** using ADB on an Android emulator running on your own device.
 - No game data is tampered with.
 - Use at your own risk. The author is not responsible for any misuse.
-
 
 That’s it! 🎉  
 Enjoy using the tool.
