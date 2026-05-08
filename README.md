@@ -56,5 +56,13 @@ Some files that are temporary, ignore it or do anythings you want :)
 
 ---
 
+## ⚠️ Disclaimer
+This project is intended for **educational and personal use only**.  
+- This tool does **not** modify, hack, or exploit any game files or servers.
+- It only automates **client-side actions** using ADB on an Android emulator running on your own device.
+- No game data is tampered with.
+- Use at your own risk. The author is not responsible for any misuse.
+
+
 That’s it! 🎉  
 Enjoy using the tool.
